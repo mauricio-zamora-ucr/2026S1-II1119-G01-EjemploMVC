@@ -9,11 +9,9 @@ def practicar():
     lista_nueva:list[str] = [  x.strip().capitalize()  for  x in lista_nombres   ]
 
     lista_largos:list[int] = [ len(x) for x in lista_nueva ]
-    print('lista largos', lista_largos)
 
-    print('lista nueva', lista_nueva)
-
-    print(lista_nombres_limpios)
+    lista_nombre_largos = list(zip(lista_nueva,lista_largos))
+    print(lista_nombre_largos)
 
 if __name__ == "__main__":
     practicar()
