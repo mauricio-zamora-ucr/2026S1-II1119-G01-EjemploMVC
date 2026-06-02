@@ -20,6 +20,9 @@ def practicar():
     lista_nombre_largos.sort(key=segundo_elemento)
     print(lista_nombre_largos)
 
+    lista_nombre_largos.sort(key=lambda x: x[1])
+    print(lista_nombre_largos)
+
     lista_filtrada = list(filter(filtro, lista_nombre_largos))
     print(lista_filtrada)
 
