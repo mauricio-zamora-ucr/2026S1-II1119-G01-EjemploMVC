@@ -17,6 +17,13 @@ def agregar_producto(codigo:str, nombre:str, precio:float, cantidad:int, activo:
     if verificar_codigo_producto(codigo):
         return False, 'El codigo ya existe'
     else:
+        producto:Producto = {
+            'codigo': codigo,
+            'nombre': nombre.strip(),
+            'precio': precio,
+            'cantidad': cantidad,
+            'activo': activo
+        }
         _productos[producto['codigo']] = producto
         return True, 'Producto agregado exitosamente'
 
