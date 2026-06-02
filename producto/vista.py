@@ -8,7 +8,7 @@ def crear_vista_menu_productos() -> int:
 def crear_vista_agregar_producto() -> tuple[str, str, float, int, bool]:
     codigo = leer_texto('Ingrese el codigo del producto: ')
     nombre = leer_texto('Ingrese el nombre del producto: ')
-    precio = leer_flotanteinput('Ingrese el precio del producto: ')
+    precio = leer_flotante('Ingrese el precio del producto: ')
     cantidad = leer_entero('Ingrese la cantidad del producto: ')
     activo = leer_booleano('¿El producto esta activo?')
     return codigo, nombre, precio, cantidad, activo
